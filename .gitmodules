@@ -1,0 +1,3 @@
+[submodule "Qogir-theme"]
+	path = Qogir-theme
+	url = git@github.com:guardianpt/Qogir-theme.git

@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+echo "Installing Gnome extension integration and tweak tool"
+sudo apt install gnome-tweak-tool chrome-gnome-shell
+
+echo "Please take the following steps manually:"
+echo "- Enable User themes"
+echo "- Install Dash to dock extension"
+echo "Afterwards, run setup2 to finish"

@@ -1,10 +1,10 @@
 #!/bin/zsh
 
 echo "Installing Qogir_Mod themes"
-./Qogir-theme/install
+zsh ./Qogir-theme/Install
 
 echo "Loading Gnome preferences"
-cat dconf-settings.ini > dconf-load /
+dconf load / < dconf-settings.ini
 
 echo "Removing Ubuntu Dock"
 cd /usr/share/gnome-shell/extensions

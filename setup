@@ -1,9 +1,18 @@
 #!/bin/zsh
 
+echo "Fetching dependencies"
+git submodule init
+git submodule update
+
+echo "Installing paper icon theme"
+sudo add-apt-repository -u ppa:snwh/ppa
+sudo apt-get install paper-icon-theme
+
 echo "Installing Gnome extension integration and tweak tool"
 sudo apt install gnome-tweak-tool chrome-gnome-shell
 
+echo "\n"
 echo "Please take the following steps manually:"
-echo "- Enable User themes"
-echo "- Install Dash to dock extension"
+echo "- Enable User themes (https://extensions.gnome.org/extension/19/user-themes)"
+echo "- Install Dash to dock extension (https://extensions.gnome.org/extension/307/dash-to-dock)"
 echo "Afterwards, run setup2 to finish"

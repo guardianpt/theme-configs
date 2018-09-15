@@ -6,8 +6,10 @@ zsh ./Qogir-theme/Install
 print "Installing solarized terminal theme"
 dconf load /org/gnome/terminal/legacy/profiles:/:0bdff33e-e9ea-4b67-93ef-afab7fadea17/ < solarized-term.dconf
 
-print "Removing Ubuntu Dock"
-cd /usr/share/gnome-shell/extensions
-sudo mv ubuntu-dock@ubuntu.com{,.bak}
+if [[ -d /usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com ]] then
+	print "Removing Ubuntu Dock"
+	cd /usr/share/gnome-shell/extensions
+	sudo mv ubuntu-dock@ubuntu.com{,.bak}
+fi
 
 print "Please remember to enable Qogir_Mod and solarized terminal themes"

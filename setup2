@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 print "Installing Qogir_Mod themes"
-./Qogir-theme/install
+zsh ./Qogir-theme/Install
 
 print "Installing solarized terminal theme"
 dconf load /org/gnome/terminal/legacy/profiles:/:0bdff33e-e9ea-4b67-93ef-afab7fadea17/ < solarized-term.dconf
